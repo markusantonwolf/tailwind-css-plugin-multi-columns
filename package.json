@@ -1,0 +1,36 @@
+{
+    "name": "@markusantonwolf/tailwind-css-plugin-multi-columns",
+    "version": "1.0.0",
+    "description": "A Tailwind CSS plugin for usefull css filter utilities.",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "node ./scripts/build.js",
+        "purge": "node ./scripts/purge.js"
+    },
+    "author": {
+        "name": "Markus A. Wolf",
+        "email": "wolf.markus.anton@gmail.com",
+        "url": "https://www.markusantonwolf.com/"
+    },
+    "homepage": "https://github.com/markusantonwolf/tailwind-css-plugin-multi-columns#readme",
+    "bugs": {
+        "url": "https://github.com/markusantonwolf/tailwind-css-plugin-multi-columns/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/markusantonwolf/tailwind-css-plugin-multi-columns.git"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^9.6.1",
+        "change-case": "^4.1.2",
+        "clean-css": "^4.2.1",
+        "hex-rgb": "^4.2.0",
+        "lodash": "^4.17.20",
+        "tailwindcss": "^1.8.3"
+    },
+    "peerDependencies": {
+        "tailwindcss": "^1.8.3 || ^2.0.0"
+    }
+}
