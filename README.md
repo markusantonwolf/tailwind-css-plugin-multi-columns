@@ -89,6 +89,8 @@ With this Tailwind CSS Plugin you can easily the following multi-column properti
 - column-span
 - column-width
 
+**You can find a list of all generated utilities here - [All Multi Column utilities](https://github.com/markusantonwolf/tailwind-css-plugin-multi-columns/blob/master/dist/multi-columns.css)**
+
 ## Licence
 
 Tailwind CSS Plugin Filter utilities is released under the [MIT license](https://github.com/markusantonwolf/tailwind-css-plugin-multi-columns/blob/master/licence.md) & supports modern environments.
