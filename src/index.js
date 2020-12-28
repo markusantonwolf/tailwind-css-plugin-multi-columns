@@ -51,15 +51,17 @@ function getTaColumns(options) {
         columns: "auto 1",
     };
 
+    for (const property in options.columns) {
+        new_utilities[".column-" + options.columns[property]] = {
+            columnGap: "2rem",
+            columnFill: "balance",
+            columns: "auto " + options.columns[property],
+        };
+    }
+
     new_utilities[".column-span-all"] = {
         columnSpan: "all",
     };
-
-    for (const property in options.columns) {
-        new_utilities[".column-" + options.columns[property]] = {
-            columnCount: options.columns[property],
-        };
-    }
 
     for (const property in options.gaps) {
         new_utilities[".column-gap-" + property] = {

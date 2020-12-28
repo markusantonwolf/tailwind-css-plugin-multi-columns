@@ -4,40 +4,56 @@
 	columns: auto 1;
 }
 
-.column-span-all {
-	column-span: all;
-}
-
 .column-2 {
-	column-count: 2;
+	column-gap: 2rem;
+	column-fill: balance;
+	columns: auto 2;
 }
 
 .column-3 {
-	column-count: 3;
+	column-gap: 2rem;
+	column-fill: balance;
+	columns: auto 3;
 }
 
 .column-4 {
-	column-count: 4;
+	column-gap: 2rem;
+	column-fill: balance;
+	columns: auto 4;
 }
 
 .column-5 {
-	column-count: 5;
+	column-gap: 2rem;
+	column-fill: balance;
+	columns: auto 5;
 }
 
 .column-6 {
-	column-count: 6;
+	column-gap: 2rem;
+	column-fill: balance;
+	columns: auto 6;
 }
 
 .column-7 {
-	column-count: 7;
+	column-gap: 2rem;
+	column-fill: balance;
+	columns: auto 7;
 }
 
 .column-8 {
-	column-count: 8;
+	column-gap: 2rem;
+	column-fill: balance;
+	columns: auto 8;
 }
 
 .column-9 {
-	column-count: 9;
+	column-gap: 2rem;
+	column-fill: balance;
+	columns: auto 9;
+}
+
+.column-span-all {
+	column-span: all;
 }
 
 .column-gap-0 {

@@ -21649,49 +21649,81 @@ video {
        columns: auto 1;
 }
 
-.column-span-all {
-  -moz-column-span: all;
-       column-span: all;
-}
-
 .column-2 {
-  -moz-column-count: 2;
-       column-count: 2;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  -moz-column-fill: balance;
+       column-fill: balance;
+  -moz-columns: auto 2;
+       columns: auto 2;
 }
 
 .column-3 {
-  -moz-column-count: 3;
-       column-count: 3;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  -moz-column-fill: balance;
+       column-fill: balance;
+  -moz-columns: auto 3;
+       columns: auto 3;
 }
 
 .column-4 {
-  -moz-column-count: 4;
-       column-count: 4;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  -moz-column-fill: balance;
+       column-fill: balance;
+  -moz-columns: auto 4;
+       columns: auto 4;
 }
 
 .column-5 {
-  -moz-column-count: 5;
-       column-count: 5;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  -moz-column-fill: balance;
+       column-fill: balance;
+  -moz-columns: auto 5;
+       columns: auto 5;
 }
 
 .column-6 {
-  -moz-column-count: 6;
-       column-count: 6;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  -moz-column-fill: balance;
+       column-fill: balance;
+  -moz-columns: auto 6;
+       columns: auto 6;
 }
 
 .column-7 {
-  -moz-column-count: 7;
-       column-count: 7;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  -moz-column-fill: balance;
+       column-fill: balance;
+  -moz-columns: auto 7;
+       columns: auto 7;
 }
 
 .column-8 {
-  -moz-column-count: 8;
-       column-count: 8;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  -moz-column-fill: balance;
+       column-fill: balance;
+  -moz-columns: auto 8;
+       columns: auto 8;
 }
 
 .column-9 {
-  -moz-column-count: 9;
-       column-count: 9;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  -moz-column-fill: balance;
+       column-fill: balance;
+  -moz-columns: auto 9;
+       columns: auto 9;
+}
+
+.column-span-all {
+  -moz-column-span: all;
+       column-span: all;
 }
 
 .column-gap-0 {
@@ -43241,49 +43273,81 @@ video {
          columns: auto 1;
   }
 
-  .sm\:column-span-all {
-    -moz-column-span: all;
-         column-span: all;
-  }
-
   .sm\:column-2 {
-    -moz-column-count: 2;
-         column-count: 2;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 2;
+         columns: auto 2;
   }
 
   .sm\:column-3 {
-    -moz-column-count: 3;
-         column-count: 3;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 3;
+         columns: auto 3;
   }
 
   .sm\:column-4 {
-    -moz-column-count: 4;
-         column-count: 4;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 4;
+         columns: auto 4;
   }
 
   .sm\:column-5 {
-    -moz-column-count: 5;
-         column-count: 5;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 5;
+         columns: auto 5;
   }
 
   .sm\:column-6 {
-    -moz-column-count: 6;
-         column-count: 6;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 6;
+         columns: auto 6;
   }
 
   .sm\:column-7 {
-    -moz-column-count: 7;
-         column-count: 7;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 7;
+         columns: auto 7;
   }
 
   .sm\:column-8 {
-    -moz-column-count: 8;
-         column-count: 8;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 8;
+         columns: auto 8;
   }
 
   .sm\:column-9 {
-    -moz-column-count: 9;
-         column-count: 9;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 9;
+         columns: auto 9;
+  }
+
+  .sm\:column-span-all {
+    -moz-column-span: all;
+         column-span: all;
   }
 
   .sm\:column-gap-0 {
@@ -64446,49 +64510,81 @@ video {
          columns: auto 1;
   }
 
-  .md\:column-span-all {
-    -moz-column-span: all;
-         column-span: all;
-  }
-
   .md\:column-2 {
-    -moz-column-count: 2;
-         column-count: 2;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 2;
+         columns: auto 2;
   }
 
   .md\:column-3 {
-    -moz-column-count: 3;
-         column-count: 3;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 3;
+         columns: auto 3;
   }
 
   .md\:column-4 {
-    -moz-column-count: 4;
-         column-count: 4;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 4;
+         columns: auto 4;
   }
 
   .md\:column-5 {
-    -moz-column-count: 5;
-         column-count: 5;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 5;
+         columns: auto 5;
   }
 
   .md\:column-6 {
-    -moz-column-count: 6;
-         column-count: 6;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 6;
+         columns: auto 6;
   }
 
   .md\:column-7 {
-    -moz-column-count: 7;
-         column-count: 7;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 7;
+         columns: auto 7;
   }
 
   .md\:column-8 {
-    -moz-column-count: 8;
-         column-count: 8;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 8;
+         columns: auto 8;
   }
 
   .md\:column-9 {
-    -moz-column-count: 9;
-         column-count: 9;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 9;
+         columns: auto 9;
+  }
+
+  .md\:column-span-all {
+    -moz-column-span: all;
+         column-span: all;
   }
 
   .md\:column-gap-0 {
@@ -85651,49 +85747,81 @@ video {
          columns: auto 1;
   }
 
-  .lg\:column-span-all {
-    -moz-column-span: all;
-         column-span: all;
-  }
-
   .lg\:column-2 {
-    -moz-column-count: 2;
-         column-count: 2;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 2;
+         columns: auto 2;
   }
 
   .lg\:column-3 {
-    -moz-column-count: 3;
-         column-count: 3;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 3;
+         columns: auto 3;
   }
 
   .lg\:column-4 {
-    -moz-column-count: 4;
-         column-count: 4;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 4;
+         columns: auto 4;
   }
 
   .lg\:column-5 {
-    -moz-column-count: 5;
-         column-count: 5;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 5;
+         columns: auto 5;
   }
 
   .lg\:column-6 {
-    -moz-column-count: 6;
-         column-count: 6;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 6;
+         columns: auto 6;
   }
 
   .lg\:column-7 {
-    -moz-column-count: 7;
-         column-count: 7;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 7;
+         columns: auto 7;
   }
 
   .lg\:column-8 {
-    -moz-column-count: 8;
-         column-count: 8;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 8;
+         columns: auto 8;
   }
 
   .lg\:column-9 {
-    -moz-column-count: 9;
-         column-count: 9;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 9;
+         columns: auto 9;
+  }
+
+  .lg\:column-span-all {
+    -moz-column-span: all;
+         column-span: all;
   }
 
   .lg\:column-gap-0 {
@@ -106856,49 +106984,81 @@ video {
          columns: auto 1;
   }
 
-  .xl\:column-span-all {
-    -moz-column-span: all;
-         column-span: all;
-  }
-
   .xl\:column-2 {
-    -moz-column-count: 2;
-         column-count: 2;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 2;
+         columns: auto 2;
   }
 
   .xl\:column-3 {
-    -moz-column-count: 3;
-         column-count: 3;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 3;
+         columns: auto 3;
   }
 
   .xl\:column-4 {
-    -moz-column-count: 4;
-         column-count: 4;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 4;
+         columns: auto 4;
   }
 
   .xl\:column-5 {
-    -moz-column-count: 5;
-         column-count: 5;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 5;
+         columns: auto 5;
   }
 
   .xl\:column-6 {
-    -moz-column-count: 6;
-         column-count: 6;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 6;
+         columns: auto 6;
   }
 
   .xl\:column-7 {
-    -moz-column-count: 7;
-         column-count: 7;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 7;
+         columns: auto 7;
   }
 
   .xl\:column-8 {
-    -moz-column-count: 8;
-         column-count: 8;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 8;
+         columns: auto 8;
   }
 
   .xl\:column-9 {
-    -moz-column-count: 9;
-         column-count: 9;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    -moz-column-fill: balance;
+         column-fill: balance;
+    -moz-columns: auto 9;
+         columns: auto 9;
+  }
+
+  .xl\:column-span-all {
+    -moz-column-span: all;
+         column-span: all;
   }
 
   .xl\:column-gap-0 {
