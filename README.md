@@ -6,7 +6,7 @@ The CSS multi-column layout allows easy definition of multiple columns of text -
 
 ## Quick start - only for development / testing
 
-For a quick start you can use the following link to start with all utilities. Please don't use this link in production environment. For a good developer experience install the plugin and add it to your tailwind.config.js - see [Installation](#Installation).
+For a quick start you can use the following link to start with all utilities. Please don't use this link in production environment. For a good developer experience install the plugin and add it to your tailwind.config.js - see [Installation](#user-content-installation).
 
 ```html
 <link href="https://cdn.jsdelivr.net/gh/markusantonwolf/tailwind-css-plugin-multi-columns/dist/multi-columns.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@ module.exports = {
 }
 ```
 
-You can learn more about all configurations in: [More configurations](#more-configurations). You can find all variants in the Tailwind CSS documentation: [Tailwind CSS - Configuring Variants](https://tailwindcss.com/docs/configuring-variants). 
+You can learn more about all configurations in: [More configurations](#user-content-more-configurations). You can find all variants in the Tailwind CSS documentation: [Tailwind CSS - Configuring Variants](https://tailwindcss.com/docs/configuring-variants). 
 
 ## Examples
 
