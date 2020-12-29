@@ -1,6 +1,6 @@
 {
     "name": "@markusantonwolf/tailwind-css-plugin-multi-columns",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "The CSS multi-column layout allows easy definition of multiple columns of text - just like in newspapers. This Tailwind CSS plugin adds utilities for you to use all multi-column properties.",
     "main": "src/index.js",
     "scripts": {
