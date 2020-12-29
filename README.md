@@ -101,15 +101,15 @@ module.exports = {
     // ...
     plugins: [
         require('@markusantonwolf/tailwind-css-plugin-multi-columns')({
-            variants: ["responsive"], // replaces definition
-            styles: ["dotted", "solid", "dashed"], // replaces definition
-            columns: ["2", "3", "4", "5", "6", "7", "8", "9"], // replaces definition
-            span: [], // merges definition
-            gaps: [], // merges definition
-            spacing: [], // merges definition
-            colors: [], // merges definition
-            borderWidth: [], // merges definition
-            opacity: [], // merges definition
+            variants: ["responsive"], // replaces definitions
+            styles: ["dotted", "solid", "dashed"], // replaces definitions
+            columns: ["2", "3", "4", "5", "6", "7", "8", "9"], // replaces definitions
+            span: [], // merges definitions
+            gaps: [], // merges definitions
+            spacing: [], // merges definitions
+            colors: [], // merges definitions
+            borderWidth: [], // merges definitions
+            opacity: [], // merges definitions
         }),
     ]
 }
