@@ -18,10 +18,10 @@ For a quick start you can use the following link to start with all utilities. Pl
 
 ```bash
 # Install using npm
-npm install --save-dev tailwind-css-plugin-multi-columns
+npm install --save-dev @markusantonwolf/tailwind-css-plugin-multi-columns
 
 # Install using yarn
-yarn add -D tailwind-css-plugin-multi-columns
+yarn add -D @markusantonwolf/tailwind-css-plugin-multi-columns
 ```
 
 ### 2. Add it to your `tailwind.config.js` file:
