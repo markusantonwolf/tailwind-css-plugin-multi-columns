@@ -106,6 +106,11 @@ function getTaColumns(options) {
 }
 
 function getStyleRule(inputColor) {
+    if (["transparent", "currentColor"].includes(inputColor)) {
+        return {
+            "--ta-column-rule-color": inputColor,
+        };
+    }
     try {
         const color = hexRgb(inputColor);
         return {
