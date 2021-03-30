@@ -105,49 +105,40 @@ function getTaColumns(options) {
     return new_utilities;
 }
 
+function getStyleRule(inputColor) {
+    if (["transparent", "currentColor"].includes(inputColor)) {
+        return {
+            "--ta-column-rule-color": inputColor,
+        };
+    }
+    try {
+        const color = hexRgb(inputColor);
+        return {
+            "--ta-column-rule-color": `rgba(${color.red}, ${color.green}, ${color.blue}, var(--ta-column-rule-opacity))`,
+        };
+    } catch (error) {
+        console.info(
+            "Tailwind CSS Plugin Multi Column - not rendered color: ",
+            inputColor
+        );
+    }
+}
+
 function getTaColumnColors(options) {
     const new_utilities = {};
 
     for (const property in options.colors) {
         if (_.isObject(options.colors[property])) {
             for (const item in options.colors[property]) {
-                try {
-                    const color = hexRgb(options.colors[property][item]);
-                    new_utilities[".rule-" + property + "-" + item] = {
-                        "--ta-column-rule-color":
-                            "rgba(" +
-                            color.red +
-                            ", " +
-                            color.green +
-                            ", " +
-                            color.blue +
-                            ", var(--ta-column-rule-opacity))",
-                    };
-                } catch (error) {
-                    console.info(
-                        "Tailwind CSS Plugin Multi Column - not rendered color: ",
-                        options.colors[property][item]
-                    );
+                const styleRule = getStyleRule(options.colors[property][item]);
+                if (styleRule) {
+                    new_utilities[`.rule-${property}-${item}`] = styleRule;
                 }
             }
         } else {
-            try {
-                const color = hexRgb(options.colors[property]);
-                new_utilities[".rule-" + property] = {
-                    "--ta-column-rule-color":
-                        "rgba(" +
-                        color.red +
-                        ", " +
-                        color.green +
-                        ", " +
-                        color.blue +
-                        ", var(--ta-column-rule-opacity))",
-                };
-            } catch (error) {
-                console.info(
-                    "Tailwind CSS Plugin Multi Column - not rendered color: ",
-                    options.colors[property]
-                );
+            const styleRule = getStyleRule(options.colors[property]);
+            if (styleRule) {
+                new_utilities[".rule-" + property] = styleRule;
             }
         }
     }
