@@ -192,6 +192,14 @@
 	--ta-column-rule-style: dashed;
 }
 
+.rule-transparent {
+	--ta-column-rule-color: transparent;
+}
+
+.rule-current {
+	--ta-column-rule-color: currentColor;
+}
+
 .rule-black {
 	--ta-column-rule-color: rgba(0, 0, 0, var(--ta-column-rule-opacity));
 }

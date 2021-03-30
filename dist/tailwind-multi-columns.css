@@ -16189,7 +16189,6 @@ video {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -21885,6 +21884,14 @@ video {
 
 .rule-dashed {
   --ta-column-rule-style: dashed;
+}
+
+.rule-transparent {
+  --ta-column-rule-color: transparent;
+}
+
+.rule-current {
+  --ta-column-rule-color: currentColor;
 }
 
 .rule-black {
@@ -37879,7 +37886,6 @@ video {
   }
 
   .sm\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -59116,7 +59122,6 @@ video {
   }
 
   .md\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -80353,7 +80358,6 @@ video {
   }
 
   .lg\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -101590,7 +101594,6 @@ video {
   }
 
   .xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
