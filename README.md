@@ -152,5 +152,5 @@ Tailwind CSS Plugin Filter utilities is released under the [MIT license](https:/
 
 ## Copyright
 
-© 2020 Markus A. Wolf
+© 2021 Markus A. Wolf
 <https://www.markusantonwolf.com>
