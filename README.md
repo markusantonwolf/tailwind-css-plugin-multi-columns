@@ -123,18 +123,25 @@ In the following example you can see all available options (default values) for 
 // tailwind.config.js
 module.exports = {
     // ...
-    plugins: [
-        require('@markusantonwolf/tailwind-css-plugin-multi-columns')({
-            variants: ["responsive"], // replaces definitions
-            styles: ["dotted", "solid", "dashed"], // replaces definitions
-            columns: ["2", "3", "4", "5", "6", "7", "8", "9"], // replaces definitions
+    theme: {
+        multiColumns: {
+            styles: ["dotted", "solid", "dashed"],
+            columns: ["2", "3", "4", "5", "6", "7", "8", "9"],
             span: [], // merges definitions
             gaps: [], // merges definitions
             spacing: [], // merges definitions
             colors: [], // merges definitions
             borderWidth: [], // merges definitions
             opacity: [], // merges definitions
-        }),
+        },
+    },
+    // ...
+    variants: {
+        multiColumns: ["responsive", "dark"]
+    },
+    // ...
+    plugins: [
+        require('@markusantonwolf/tailwind-css-plugin-multi-columns'),
     ]
 }
 ```
