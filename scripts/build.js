@@ -11,12 +11,17 @@ function buildDistFile() {
                     container: {
                         center: true,
                     },
+                    multiColumns: {
+                        span: {
+                            test: "inherit",
+                        },
+                    },
+                },
+                variants: {
+                    multiColumns: ["responsive"]
                 },
                 plugins: [
-                    require("../src/index.js")({
-                        variants: ["responsive"],
-                        export: true,
-                    }),
+                    require("../src/index.js"),
                 ],
             }),
             require("autoprefixer"),
