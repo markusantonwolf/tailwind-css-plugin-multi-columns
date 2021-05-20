@@ -592,6 +592,10 @@
 	column-span: none;
 }
 
+.span-test {
+	column-span: inherit;
+}
+
 .column-span-all {
 	column-span: all;
 }

@@ -122,17 +122,5 @@ module.exports = plugin.withOptions((options = {}) => {
             respectPrefix: plugin.respectPrefix,
             respectImportant: plugin.respectImportant,
         });
-
-        if (config.export === true) {
-            fs.writeFileSync(
-                "./dist/multi-columns.css",
-                fnc.flattenObject(new_utilities),
-                function (err) {
-                    if (err) {
-                        return console.log(err);
-                    }
-                }
-            );
-        }
     };
 });
