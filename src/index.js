@@ -1,10 +1,6 @@
-const fs = require("fs");
 const plugin = require("tailwindcss/plugin");
-const resolveConfig = require("tailwindcss/resolveConfig");
-const tailwindConfig = require("tailwindcss/defaultConfig");
 const _ = require("lodash");
 
-const fnc = require("./functions");
 const utilities = require("./utilities");
 
 const defaultConfig = {
@@ -29,68 +25,6 @@ const pluginDefaults = {
 };
 
 let new_utilities = {};
-
-if (process.env.NODE_ENV === "test") {
-    const resolvedTailwindConfig = resolveConfig(tailwindConfig).theme;
-    const config = _.defaults(
-        {
-            gaps: resolvedTailwindConfig.gap,
-            spacing: resolvedTailwindConfig.spacing,
-            colors: resolvedTailwindConfig.colors,
-            borderWidth: resolvedTailwindConfig.borderWidth,
-            opacity: resolvedTailwindConfig.opacity,
-            width: resolvedTailwindConfig.spacing,
-        },
-        defaultConfig
-    );
-
-    _.merge(new_utilities, utilities.columns(config));
-    _.merge(new_utilities, utilities.colors(config));
-    _.merge(new_utilities, utilities.rules(config));
-    _.merge(new_utilities, utilities.span(config));
-    _.merge(new_utilities, utilities.width(config));
-
-    fs.writeFile(
-        "./test/multi-columns.css",
-        fnc.flattenObject(new_utilities),
-        function (err) {
-            if (err) {
-                return console.log(err);
-            }
-        }
-    );
-}
-
-if (process.env.NODE_ENV === "production") {
-    const resolvedTailwindConfig = resolveConfig(tailwindConfig).theme;
-    const config = _.defaults(
-        {
-            gaps: resolvedTailwindConfig.gap,
-            spacing: resolvedTailwindConfig.spacing,
-            colors: resolvedTailwindConfig.colors,
-            borderWidth: resolvedTailwindConfig.borderWidth,
-            opacity: resolvedTailwindConfig.opacity,
-            width: resolvedTailwindConfig.spacing,
-        },
-        defaultConfig
-    );
-
-    _.merge(new_utilities, utilities.columns(config));
-    _.merge(new_utilities, utilities.colors(config));
-    _.merge(new_utilities, utilities.rules(config));
-    _.merge(new_utilities, utilities.span(config));
-    _.merge(new_utilities, utilities.width(config));
-
-    fs.writeFile(
-        "./dist/multi-columns.css",
-        fnc.flattenObject(new_utilities),
-        function (err) {
-            if (err) {
-                return console.log(err);
-            }
-        }
-    );
-}
 
 module.exports = plugin.withOptions((options = {}) => {
     return function ({ addUtilities, theme, variants, options }) {

@@ -4,8 +4,8 @@
     "description": "The CSS multi-column layout allows easy definition of multiple columns of text - just like in newspapers. This Tailwind CSS plugin adds utilities for you to use all multi-column properties.",
     "main": "src/index.js",
     "scripts": {
-        "test": "NODE_ENV=test node ./src/index.js",
-        "prebuild": "NODE_ENV=production node ./src/index.js",
+        "test": "node ./src/test.js",
+        "prebuild": "npm run test && node ./scripts/prebuild.js",
         "build": "node ./scripts/build.js",
         "upload": "npm publish --access public",
         "patch": "npm version patch",
