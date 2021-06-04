@@ -46,10 +46,10 @@ module.exports = plugin.withOptions((options = {}) => {
         );
 
         _.merge(new_utilities, utilities.columns(config));
-        _.merge(new_utilities, utilities.colors(config));
         _.merge(new_utilities, utilities.rules(config));
-        _.merge(new_utilities, utilities.span(config));
         _.merge(new_utilities, utilities.width(config));
+        _.merge(new_utilities, utilities.colors(config));
+        _.merge(new_utilities, utilities.span(config));
 
         addUtilities(new_utilities, {
             variants: plugin.variants,
