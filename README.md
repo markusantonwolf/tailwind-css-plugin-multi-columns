@@ -2,7 +2,7 @@
 
 The CSS multi-column layout allows easy definition of multiple columns of text - just like in newspapers. This Tailwind CSS plugin adds utilities for you to use all multi-column properties.
 
-**Compatibility: Tailwind CSS ^1.8.3 and ^2.X.**
+**Compatibility: Tailwind CSS ^1.8.3, ^2.X. and ^3.X**
 
 ## Quick start - only for development / testing
 

@@ -7,6 +7,7 @@ function buildDistFile() {
     return new Promise((resolve, reject) => {
         return postcss([
             tailwind({
+                content: ["./public/**/*.{html,js}"],
                 theme: {
                     container: {
                         center: true,
@@ -18,11 +19,9 @@ function buildDistFile() {
                     },
                 },
                 variants: {
-                    multiColumns: ["responsive"]
+                    multiColumns: ["responsive"],
                 },
-                plugins: [
-                    require("../src/index.js"),
-                ],
+                plugins: [require("../src/index.js")],
             }),
             require("autoprefixer"),
         ])
@@ -43,12 +42,20 @@ function buildDistFile() {
                     `./dist/tailwind-multi-columns.css`,
                     result.css
                 );
+                fs.writeFileSync(
+                    `./public/dist/tailwind-multi-columns.css`,
+                    result.css
+                );
                 return result;
             })
             .then((result) => {
                 const minified = new CleanCSS().minify(result.css);
                 fs.writeFileSync(
                     `./dist/tailwind-multi-columns.min.css`,
+                    minified.styles
+                );
+                fs.writeFileSync(
+                    `./public/dist/tailwind-multi-columns.min.css`,
                     minified.styles
                 );
             })
@@ -59,6 +66,10 @@ function buildDistFile() {
                 const minified = new CleanCSS().minify(data);
                 fs.writeFileSync(
                     `./dist/multi-columns.min.css`,
+                    minified.styles
+                );
+                fs.writeFileSync(
+                    `./public/dist/multi-columns.min.css`,
                     minified.styles
                 );
             })
